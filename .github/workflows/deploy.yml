@@ -22,5 +22,5 @@ jobs:
           context: .
           push: true
           tags: |
-            $ {{ secrets.DOCKER_USERNAME }}/automl_pipeline:latest
-            $ {{ secrets.DOCKER_USERNAME }}/automl_pipeline:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/automl_pipeline:latest
+            ${{ secrets.DOCKER_USERNAME }}/automl_pipeline:${{ github.sha }}
